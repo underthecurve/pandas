@@ -5263,7 +5263,7 @@ class NDFrame(PandasObject):
         ``mean``, ``std``, ``min``, ``max`` as well as lower, ``50`` and
         upper percentiles. By default the lower percentile is ``25`` and the
         upper percentile is ``75``. The ``50`` percentile is the
-        same as the median.
+        same as the median. The ``std`` returned is the sample standard deviation (normalized by N-1).
 
         For object data (e.g. strings or timestamps), the result's index
         will include ``count``, ``unique``, ``top``, and ``freq``. The ``top``
